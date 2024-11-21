@@ -1,0 +1,58 @@
+.crud-app {
+  padding: .5rem;
+}
+
+.crud-app h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.crud-app .button-group {
+  margin-top: 1.5rem;
+}
+
+.crud-app table {
+  margin-top: 1.5rem;
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/* Giữ cho background ngoài modal không bị mờ đi */
+.modal {
+  background-color: transparent !important;  /* Tắt background mờ */
+}
+
+/* Nếu bạn muốn background có màu và chỉ giảm opacity, có thể làm như sau */
+.modal.show {
+  background-color: rgba(0, 0, 0, 0.2) !important;  /* Giữ màu xám mờ */
+}
+
+@media (max-width: 768px) {
+  .crud-app {
+    padding: 1rem;
+  }
+
+  .crud-app h1 {
+    font-size: 2rem;
+  }
+
+  .crud-app .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .crud-app table {
+    font-size: 0.875rem;
+  }
+
+  .item-image {
+    width: 80px;
+    height: 80px;
+  }
+}

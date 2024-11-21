@@ -1,0 +1,40 @@
+.admin-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 200px;
+    background-color: #2a9942;
+  }
+  
+  .sidebar ul {
+    margin-top: 20px !important;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-inline-start: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #ddd;
+    color: #000;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
